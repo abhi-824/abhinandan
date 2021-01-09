@@ -180,4 +180,8 @@
     delay: 10,
     time: 1000,
   });
+
+  // For owl carousel
+  $(".owl-carousel").owlCarousel();
+
 })(jQuery);

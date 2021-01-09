@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 body {
   font-family: "Lato", sans-serif;
 
@@ -77,6 +78,22 @@ a:hover {
 }
 .bottom-clip:hover:after {
   content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  z-index:100000;
+  translate: translateX(50%);
+  width: 0px;
+  height: 0px;
+  /* background: rgb(228, 228, 228); */
+  border-style: solid;
+  
+  border-width:10px 10px 0px 10px;
+  border-color: #ffffff transparent transparent;
+}
+.bottom-clip-permanent::after{
+  content: "";
+  
   position: absolute;
   left: 50%;
   bottom: -20px;
@@ -238,6 +255,75 @@ a:hover {
   color: #fff;
 }
 
+.bottom-clip-permanent a{
+  color: #002366;
+  font-weight: bold;
+}
+
+/* Carousel */
+#carousel .carousel-item {
+  height:80vh;
+
+}
+.owl-carousel{
+  padding:2rem;
+}
+/* Birthday bash */
+.birthday{
+  padding: 30px 0px 50px 0px;
+
+  
+}
+.birthday .item{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  grid-gap: 1rem;
+}
+.birthday .item .birthday_date{
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.birthday .item .birthday_date span{
+  font-size: 16px;
+  font-weight: 300;
+  color: #333333;
+  position: relative;
+  bottom: 1px;
+}
+.birthday .item p{
+  font-size: 0.8rem;
+}
+.birthday .item i{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 0;
+}
+.birthday .row .container{
+  border: 1px #333 solid;
+  /* padding :2rem; */
+}
+.birthday h2{
+  font-size: 24px;
+    font-weight: 400;
+    padding-left: 38px;
+    margin-left: 2rem;
+    margin-top: 0px;
+    padding-top: 8px;
+    background: url("../images/birthday-icon.png") no-repeat top left;
+    padding-bottom: 7px;
+    margin-bottom: 17px;
+    color: #000000;
+}
+.birthday .image_student{
+  background: url("../images/student.jpg") center center/cover no-repeat;
+  height:250px;
+  width:250px;
+}
 #footer {
   background: #002366;
   padding: 0 0 30px 0;
